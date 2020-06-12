@@ -1,16 +1,14 @@
+@font-face {
+  font-family: Commodore64;
+  src: url(../fonts/c64.TTF);
+}
+
 body {
   background-color: #f6511d;
   color: whitesmoke;
   font-family: commodore64;
   padding: 10px;
 }
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* am having a very hard time creating flexbox code*/
 
 #page {
@@ -22,8 +20,16 @@ img {
   width: 600px;
 }
 
+.number-label {
+  background-color: #80AD77;
+  padding: 12px;
+  border: solid black 2px;
+}
+
 .header-button {
   float: right;
+  background-color: #FFB400;
+  border: black solid 2px;
 }
 
 .jumbotron {
@@ -40,7 +46,7 @@ img {
 .box {
   font-size: larger;
   background-color: #00A6ED;
-  padding: 21px;
+  padding: 12px;
   border-radius: 4px;
 }
 
@@ -50,6 +56,7 @@ form {
 }
 
 #output {
+  display: none;
   background-color: #7FB800;
   text-align: center;
   max-height: 190px;
@@ -58,20 +65,8 @@ form {
 }
 
 h6 {
-display: flexbox;
-
-justify-content: right;
-
 font-size: 24px;
-border: 4px solid black;
-width: fit-content;
-
-background-color: rosybrown;
-}
-
-@font-face {
-  font-family: Commodore64;
-  src: url(../fonts/c64.TTF);
+text-align: center;
 }
 
 #signiture {

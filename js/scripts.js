@@ -4,7 +4,11 @@ function beepBoop(userInput) {
 
   for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
-    if (x.includes ("3")) {
+    console.log(i, x)
+    if (i === "") {
+      alert("That's not a number")
+      break;
+    } else if (x.includes ("3")) {
       rework.push(rogers[2])
     } else if (x.includes("2")) {
       rework.push(rogers[1])
@@ -21,10 +25,11 @@ $(document).ready(function() {
   $("form#rogers-form").submit(function(event) {
     event.preventDefault();
 
-    let userInput = parseInt($("#input").val())
+    let userInput = $("#input").val()
+    console.log(userInput)
     let result = beepBoop(userInput)
-
-    $("#output").text(result);
+    
+    $("#output").fadeIn("slow").text(result);
   });
 
   $("#page-reveal").click(function(event) {
@@ -32,4 +37,6 @@ $(document).ready(function() {
     $(".jumbotron").hide("slow")
     $("#page").fadeIn("slow");
   })
+
+  $("#output")
 });
