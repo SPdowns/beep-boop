@@ -1,7 +1,17 @@
+.spots {
+  max-height: 400px;
+  position: relative;
+  overflow-x: scroll;
+}
+
 body {
   background-color: #f6511d;
   color: whitesmoke;
   font-family: commodore64;
+}
+
+img {
+  float: right;
 }
 
 .jumbotron {
@@ -20,10 +30,6 @@ body {
   background-color: #00A6ED;
   padding: 21px;
   border-radius: 4px;
-}
-
-.spots {
-  float: right;
 }
 
 form {
