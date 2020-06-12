@@ -1,0 +1,19 @@
+body {
+  background-color: #f6511d;
+  color: #0D2C54;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #00A6ED;
+  color: whitesmoke;
+}
+
+form {
+  text-align: center;
+  background-color: #FFB400;
+}
+
+#output {
+  background-color: #7FB800;
+}

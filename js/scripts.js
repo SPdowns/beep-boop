@@ -24,8 +24,6 @@ $(document).ready(function() {
     let userInput = parseInt($("#input").val())
     let result = beepBoop(userInput)
 
-    console.log(result)
-
     $("#output").text(result);
   });
 });
