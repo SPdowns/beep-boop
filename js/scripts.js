@@ -1,15 +1,15 @@
 function beepBoop(userInput) {
-  const rodgers = [" Beep", " Boop", " Won't You Be My Neighbor"];
+  const rogers = [" Beep", " Boop", " Won't You Be My Neighbor"];
   let rework = []
 
   for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
     if (x.includes ("3")) {
-      rework.push(rodgers[2])
+      rework.push(rogers[2])
     } else if (x.includes("2")) {
-      rework.push(rodgers[1])
+      rework.push(rogers[1])
     } else if (x.includes("1")) {
-      rework.push(rodgers[0]) 
+      rework.push(rogers[0]) 
     } else {
       rework.push(" " + x)
     }  
@@ -18,7 +18,7 @@ function beepBoop(userInput) {
 };
 
 $(document).ready(function() {
-  $("form#rodgers-form").submit(function(event) {
+  $("form#rogers-form").submit(function(event) {
     event.preventDefault();
 
     let userInput = parseInt($("#input").val())
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   $("#page-reveal").click(function(event) {
     event.preventDefault();
-    $(".jumbotron").hide()
+    $(".jumbotron").hide("slow")
     $("#page").fadeIn("slow");
   })
 });
