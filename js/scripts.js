@@ -1,23 +1,9 @@
-function nanCheck(userInput) {
-  let checkOne = userInput
-
-  if (userInput === NaN) {
-    checkOne.push("Number Yu")
-  } else {
-    return
-  }
-};
-
-
 function beepBoop(userInput) {
-  console.log(userInput)
   const rogers = [" Beep", " Boop", " Won't You Be My Neighbor"];
   let rework = []
-
-
+  console.log(userInput)
   for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
-    console.log(i)
     if (x.includes ("3")) {
       rework.push(rogers[2])
     } else if (x.includes("2")) {
@@ -36,10 +22,9 @@ $(document).ready(function() {
     event.preventDefault();
 
     let userInput = parseInt($("#input").val())
-    console.log(userInput)
-    let result = beepBoop(userInput)
+    let secondPass = beepBoop(userInput)
     
-    $("#output").fadeIn("slow").text(result);
+    $("#output").fadeIn("slow").append(secondPass);
   });
 
   $("#page-reveal").click(function(event) {
