@@ -5,10 +5,7 @@ function beepBoop(userInput) {
   for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
     console.log(i, x)
-    if (i === "") {
-      alert("That's not a number")
-      break;
-    } else if (x.includes ("3")) {
+    if (x.includes ("3")) {
       rework.push(rogers[2])
     } else if (x.includes("2")) {
       rework.push(rogers[1])
@@ -25,7 +22,7 @@ $(document).ready(function() {
   $("form#rogers-form").submit(function(event) {
     event.preventDefault();
 
-    let userInput = $("#input").val()
+    let userInput = parseInt($("#input").val())
     console.log(userInput)
     let result = beepBoop(userInput)
     
