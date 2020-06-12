@@ -1,3 +1,9 @@
 $(document).ready(function() {
-  $("form#formForm").submit(function(event) {
+  $("form#rodgers-form").submit(function(event) {
     event.preventDefault();
+
+    let userInput = $("#input").val()
+
+    $("#output").text(userInput);
+  });
+});
