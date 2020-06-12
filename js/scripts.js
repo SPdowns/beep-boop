@@ -23,7 +23,7 @@ $(document).ready(function() {
     let userInput = parseInt($("#input").val())
     let secondPass = beepBoop(userInput)
 
-    $("#output").fadeIn("slow").append(secondPass);
+    $("#output").fadeIn("slow").text(secondPass);
   });
 
   $("#page-reveal").click(function(event) {
