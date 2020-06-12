@@ -2,6 +2,7 @@ body {
   background-color: #f6511d;
   color: whitesmoke;
   font-family: commodore64;
+  padding: 10px;
 }
 
 img {
@@ -43,6 +44,7 @@ form {
 h6 {
   text-align: center;
   background-color: black;
+  width: fit-content;
 }
 
 @font-face {
@@ -54,4 +56,6 @@ h6 {
   text-align: center;
   background-color: black;
   width: 300px;
+  display: flexbox;
+  justify-content: center;
 }
