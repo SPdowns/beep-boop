@@ -26,4 +26,10 @@ $(document).ready(function() {
 
     $("#output").text(result);
   });
+
+  $("#page-reveal").click(function(event) {
+    event.preventDefault();
+    $(".jumbotron").hide()
+    $("#page").fadeIn("slow");
+  })
 });

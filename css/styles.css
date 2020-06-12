@@ -5,9 +5,17 @@ body {
   padding: 10px;
 }
 
+#page {
+  display: none;
+}
+
 img {
   float: right;
   width: 600px;
+}
+
+.header-button {
+  float: right;
 }
 
 .jumbotron {
@@ -36,7 +44,6 @@ form {
 #output {
   background-color: #7FB800;
   text-align: center;
-  max-height: 190px;
   position: relative;
   overflow-x: scroll;
 }
