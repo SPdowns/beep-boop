@@ -1,7 +1,6 @@
 function beepBoop(userInput) {
   const rogers = [" Beep", " Boop", " Won't You Be My Neighbor"];
   let rework = []
-  console.log(userInput)
   for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
     if (x.includes ("3")) {
@@ -23,7 +22,7 @@ $(document).ready(function() {
 
     let userInput = parseInt($("#input").val())
     let secondPass = beepBoop(userInput)
-    
+
     $("#output").fadeIn("slow").append(secondPass);
   });
 
