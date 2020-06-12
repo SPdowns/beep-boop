@@ -1,14 +1,20 @@
 function beepBoop(userInput) {
-  const rodgers = ["Beep", "Boop", "Won't You Be My Neighbor"];
+  const rodgers = [" Beep", " Boop", " Won't You Be My Neighbor"];
   let rework = []
-  for (let i = 0; i<= userInput; i++) {
-    console.log(i)
+
+  for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
-  if (x.includes("3")) {
-    rework.push(rodgers[2]);
-  }
+    if (x.includes ("3")) {
+      rework.push(rodgers[2])
+    } else if (x.includes("2")) {
+      rework.push(rodgers[1])
+    } else if (x.includes("1")) {
+      rework.push(rodgers[0]) 
+    } else {
+      rework.push(" " + x)
+    }  
+  };
   return rework
-};
 };
 
 $(document).ready(function() {
@@ -17,6 +23,8 @@ $(document).ready(function() {
 
     let userInput = parseInt($("#input").val())
     let result = beepBoop(userInput)
+
+    console.log(result)
 
     $("#output").text(result);
   });
