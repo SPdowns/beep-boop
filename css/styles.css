@@ -35,7 +35,7 @@ form {
 #output {
   background-color: #7FB800;
   text-align: center;
-  max-height: 201px;
+  max-height: 190px;
   position: relative;
   overflow-x: scroll;
 }
@@ -51,7 +51,7 @@ h6 {
 }
 
 #signiture {
-  float: right;
   text-align: center;
   background-color: black;
+  width: 300px;
 }
