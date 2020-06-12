@@ -13,9 +13,11 @@
 
 ## Description
 
-  
-
 _An application that takes a number input and returns a range of numbers with some silly replacements_
+
+View Live Page at:
+
+https://spdowns.github.io/beep-boop/
 
 ## Specifications
 
@@ -34,8 +36,8 @@ _An application that takes a number input and returns a range of numbers with so
 
 Open via Bash/GitBash:
 1. Clone this repository onto your computer:
-`https://github.com/SPdowns/language_quiz`
-2. Navigate into the `language_quiz` directory in Visual Studio Code or preferred text editor
+`https://github.com/SPdowns/beep-boop`
+2. Navigate into the `beep-boop` directory in Visual Studio Code or preferred text editor
 `code .`
 3. Open index.html in Chrome or preferred browser:
 `open index.html`
