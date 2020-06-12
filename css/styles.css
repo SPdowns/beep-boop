@@ -1,6 +1,7 @@
 body {
   background-color: #f6511d;
-  color: #0D2C54;
+  color: whitesmoke;
+  font-family: commodore64;
 }
 
 .jumbotron {
@@ -10,6 +11,21 @@ body {
   font-family: commodore64;
 }
 
+#input {
+  color: #f6511d;
+}
+
+.box {
+  font-size: larger;
+  background-color: #00A6ED;
+  padding: 21px;
+  border-radius: 4px;
+}
+
+.spots {
+  float: right;
+}
+
 form {
   text-align: center;
   background-color: #FFB400;
@@ -17,9 +33,16 @@ form {
 
 #output {
   background-color: #7FB800;
+  text-align: center;
 }
 
 @font-face {
   font-family: Commodore64;
   src: url(../fonts/c64.TTF);
+}
+
+#signiture {
+  float: right;
+  text-align: center;
+  background-color: black;
 }

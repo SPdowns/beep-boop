@@ -32,7 +32,7 @@ _An application that takes a number input and returns a range of numbers with so
 
 ## Known Bugs
 
-  
+  none
 
 ## Support and contact details
 
