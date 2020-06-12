@@ -1,9 +1,3 @@
-.spots {
-  max-height: 400px;
-  position: relative;
-  overflow-x: scroll;
-}
-
 body {
   background-color: #f6511d;
   color: whitesmoke;
@@ -12,6 +6,7 @@ body {
 
 img {
   float: right;
+  width: 600px;
 }
 
 .jumbotron {
@@ -40,6 +35,14 @@ form {
 #output {
   background-color: #7FB800;
   text-align: center;
+  max-height: 201px;
+  position: relative;
+  overflow-x: scroll;
+}
+
+h6 {
+  text-align: center;
+  background-color: black;
 }
 
 @font-face {
