@@ -1,11 +1,15 @@
 function beepBoop(userInput) {
+  console.log(userInput)
   const rogers = [" Beep", " Boop", " Won't You Be My Neighbor"];
   let rework = []
 
   for (let i = 0; i <= userInput; i++) {
     let x = i.toString()
-    console.log(i, x)
-    if (x.includes ("3")) {
+    console.log(i)
+    if (i === NaN) {
+      rework.push("not a num")
+      return rework
+    } else if (x.includes ("3")) {
       rework.push(rogers[2])
     } else if (x.includes("2")) {
       rework.push(rogers[1])
